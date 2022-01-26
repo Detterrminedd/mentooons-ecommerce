@@ -56,6 +56,11 @@ $font-size-large: 2.7em;
   height: 500px;
   padding-left: 2em;
   padding-right: 4em;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.wrapper1::-webkit-scrollbar {
+  display: none;
 }
 
 .top-sell {

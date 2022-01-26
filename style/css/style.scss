@@ -17,6 +17,7 @@ $font-size-large: 2.7em;
   height: 100vh;
   padding: 2em;
   color: white;
+  animation: moveDown 1s ease-in-out forwards;
   p {
     padding: 1em 0;
     font-size: $font-size-base;
@@ -43,6 +44,7 @@ $font-size-large: 2.7em;
   background-size: cover;
   background-position: center 80%;
   z-index: -1;
+  animation: introLoad 2s forwards;
 }
 
 .wrapper1 {
@@ -89,6 +91,7 @@ $font-size-large: 2.7em;
     z-index: 999;
     width: 220px;
     height: 330px;
+    animation: netflix 2s forwards;
     animation: netflix 2s forwards;
   }
 }
@@ -143,5 +146,32 @@ $font-size-large: 2.7em;
   }
   .top-sell {
     // margin-top: 200px;
+  }
+}
+
+@keyframes introLoad {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes netflix {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

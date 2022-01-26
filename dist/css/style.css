@@ -10,6 +10,7 @@
   height: 100vh;
   padding: 2em;
   color: white;
+  animation: moveDown 1s ease-in-out forwards;
 }
 
 .pg1 p {
@@ -39,6 +40,7 @@
   background-size: cover;
   background-position: center 80%;
   z-index: -1;
+  animation: introLoad 2s forwards;
 }
 
 .wrapper1 {
@@ -87,6 +89,7 @@
   z-index: 999;
   width: 220px;
   height: 330px;
+  animation: netflix 2s forwards;
   animation: netflix 2s forwards;
 }
 
@@ -141,6 +144,34 @@
     height: 70vh;
     background: white;
     color: black;
+  }
+}
+
+@keyframes introLoad {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes netflix {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

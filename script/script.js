@@ -208,3 +208,56 @@ for (let i = 0; i < dataMoral.length; i++) {
   //   console.log(cardMoral, "shabir");
   document.getElementById("datas-moral").innerHTML += cardMoral;
 }
+
+const dataTopSell = [
+  {
+    image:
+      "https://sportshub.cbsistatic.com/i/2021/10/01/571809de-232f-438a-a94f-1ff984fb711c/army-of-thieves-poster.jpg?auto=webp&width=928&height=1374&crop=0.675:1,smart",
+  },
+  {
+    image:
+      "https://storage.googleapis.com/stateless-campfire-pictures/2019/02/Netfli-You-Key-Art-Movie-Poster.jpg",
+  },
+  {
+    image:
+      "https://image.tmdb.org/t/p/w220_and_h330_face/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg",
+  },
+  {
+    image:
+      "https://static2.showtimes.com/poster/660x980/shadow-and-bone-netflix-152483.jpg",
+  },
+  {
+    image:
+      "https://image.tmdb.org/t/p/w220_and_h330_face/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg",
+  },
+  {
+    image:
+      "https://media.comicbook.com/2020/05/the-old-guard-1221464.jpeg?auto=webp&width=1080&height=1920&crop=1080:1920,smart",
+  },
+  {
+    image:
+      "//image.tmdb.org/t/p/w220_and_h330_face/g6tIKGc3f1H5QMz1dcgCwADKpZ7.jpg",
+  },
+  {
+    image:
+      "//image.tmdb.org/t/p/w220_and_h330_face/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg",
+  },
+  {
+    image:
+      "https://assets-prd.ignimgs.com/2021/07/25/army-of-thieves-poster-1627253133299.jpg?w=640",
+  },
+];
+
+for (let i = 0; i < dataTopSell.length; i++) {
+  let item = dataTopSell[i];
+  let cardTopSell = `
+  <div class="item">
+  <img
+  src="${item.image}"
+  />
+  <div>${[i + 1]}</div>
+</div>
+        `;
+  //   console.log(cardTopSell, "shabir");
+  document.getElementById("datas-top-selling").innerHTML += cardTopSell;
+}
